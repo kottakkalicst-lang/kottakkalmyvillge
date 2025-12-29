@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<title>KOTTAKKAL – My Village</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Marcellus&display=swap" rel="stylesheet">
+
+<style>
+/* ===== RESET & VIEWPORT ===== */
+*{box-sizing:border-box}
+html,body{
+    height:100%;
+    margin:0;
+    overflow:hidden; /* 🚫 NO SCROLL */
+}
+
+/* ===== BODY ===== */
+body{
+    color:#f5e6c8;
+    font-family:'Marcellus','Chilanka',serif;
+
+    background:
+      linear-gradient(rgba(43,29,14,0.94), rgba(43,29,14,0.94)),
+      url("https://upload.wikimedia.org/wikipedia/commons/8/86/Kerala_mural_painting_detail.jpg");
+
+    background-size:cover;
+    background-position:center;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:18px 10px;
+    border-bottom:4px solid #caa34d;
+}
+
+header h1{
+    font-size:42px;
+    letter-spacing:7px;
+    color:#ffd77a;
+    margin:4px 0;
+}
+
+header p{
+    font-size:18px;
+    margin:0;
+}
+
+.lamps{
+    font-size:28px;
+    color:#ffd77a;
+}
+
+/* ===== MAIN CONTENT ===== */
+main{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:20px;
+    align-items:center;
+}
+
+/* ===== PALM-LEAF SCROLL ===== */
+.scroll{
+    background:#3b2613;
+    padding:22px;
+    border-radius:12px;
+    text-align:center;
+
+    border-left:8px solid #caa34d;
+    border-right:8px solid #caa34d;
+
+    box-shadow:
+      inset 0 0 0 2px #8f6b2c,
+      0 0 20px rgba(0,0,0,0.6);
+}
+
+.scroll h2{
+    color:#ffd77a;
+    margin:0 0 10px;
+    font-size:20px;
+}
+
+.scroll p{
+    font-family:'Chilanka',serif;
+    font-size:18px;
+    line-height:1.6;
+    margin:0;
+    text-shadow:1px 1px 0 #1c1209;
+}
+
+/* ===== AD BOX ===== */
+.adbox{
+    background:#3b2613;
+    padding:22px;
+    border-radius:12px;
+    text-align:center;
+    border:2px solid #caa34d;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.adbox h3{
+    color:#ffd77a;
+    margin:0 0 8px;
+    font-size:20px;
+}
+
+.adbox p{
+    font-family:'Chilanka',serif;
+    font-size:18px;
+    line-height:1.6;
+    margin:0;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:12px 10px;
+    background:#1c1209;
+    border-top:4px solid #caa34d;
+    font-size:14px;
+}
+
+/* ===== MOBILE ADJUST ===== */
+@media(max-width:800px){
+    main{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+    header h1{font-size:36px}
+    .scroll p,.adbox p{font-size:16px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Optional Temple Bell (Muted) -->
+<audio autoplay loop muted>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_7b0a71f1f0.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+    <div class="lamps">🪔 🪔 🪔</div>
+    <h1>KOTTAKKAL</h1>
+    <p>MY VILLAGE</p>
+    <div class="lamps">🪔 🪔 🪔</div>
+</header>
+
+<main>
+
+    <div class="scroll">
+        <h2>🚧 വെബ്സൈറ്റ് നിർമ്മാണത്തിലുണ്ട് 🚧</h2>
+        <p>
+            ഈ വെബ്സൈറ്റ് ഇപ്പോൾ നിർമ്മാണത്തിലായതിനാൽ<br>
+            കോട്ടക്കൽ ഗ്രാമവുമായി ബന്ധപ്പെട്ട ചരിത്രം,<br>
+            സംസ്കാരം, ഓർമ്മകൾ, ചിത്രങ്ങൾ എന്നിവ<br>
+            പങ്കുവെക്കാൻ എല്ലാവരെയും സ്വാഗതം ചെയ്യുന്നു.
+        </p>
+    </div>
+
+    <div class="adbox">
+        <h3>📢 പരസ്യ ക്ഷണം</h3>
+        <p>
+            പ്രാദേശിക വ്യാപാര സ്ഥാപനങ്ങൾക്കും<br>
+            സേവനദാതാക്കൾക്കും പരസ്യം നൽകാം.<br><br>
+            📞 <b>8714832972</b><br>
+            ForceGrid Technologies – Kottakkal
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    Developed by <b>ForceGrid Technologies</b> | Kottakkal | 📞 8714832972
+</footer>
+
+</body>
+</html>
